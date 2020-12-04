@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+	font-family: Pacifico;
+	font-size: 24px;
+  line-height: 1.25;
+	
+	background-color: #ffffff;
+  color: #000000;
+  height: 4000px
+}
+
+main {
+ 
+ top:-2000px;
+ left: 0;
+ width: 100%;
+}
+header {
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+header h1 {
+  max-width: 100px;
+
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+ 
+}
+
+header nav a {
+ 
+  margin: 0 0 0 20px;
+  color: #000000
+}
+
+
+section.yellow {
+  background-color: #f2dd00;
+}
+
+section.salmon {
+  background-color: salmon;
+}
+
+section.baby {
+  background-color: #bee3f8;
+}
+
+section {
+  padding: 200px;
+ 
+}
+
+
+h2 {
+  font-size: 96px;
+  text-align: center;
+  max-width: 10em;
+  margin: 0s auto 20 auto;
+}
+
+figure {
+  max-width: 700px;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
+
+figcaption {
+  position: absolute;
+  top: 70%;
+  left: 100%;
+  width: 50%;
+  transform: translate(-50%,-50%);
+  background-color: hotpink;
+   
+}
+
+figcaption:before {
+  content: "";
+  padding: 160% 0 0 0;
+  display: block;
+}
+
+section.salmon figcaption {
+  left: 0px;
+}
+
+
+figcaption img {
+  opacity: 0;
+  transition: opacity 0.5s 0.5s ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 500px;
+  width: 100%;
+
+
+}
+
+
+figcaption.in-view img {
+  opacity: 1;
+  ;
+}
+
+figcaption img:nth-child(2){
+  transition-delay: 1s;
+}
+
+figcaption img:nth-child(3) {
+  transition-delay: 1.05s;
+}
